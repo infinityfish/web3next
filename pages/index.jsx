@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useMoralis } from "react-moralis";
+import Link from 'next/link';
 
 import styles from '../styles/Home.module.css'
 import Auth from "../components/auth"
@@ -32,10 +33,10 @@ export default function Home() {
 
       {(isAuthenticated)?
         <div className={styles.grid}>
-        <a href="/upload" className={styles.card}>
-          <h2>Upload Image</h2>
-          <p>to IPFS</p>
-        </a>
+
+        <Link href="/upload" className={styles.card}>
+          <a>Login</a>
+        </Link>
 
       </div>
       : null

@@ -13,7 +13,7 @@ export default function Login() {
           <p>ChainID is: {chainId}</p>
           <button onClick={() => logout()} className="btn-danger">Logout</button>
         </div>
-      : <button onClick={() => authenticate()} className="btn-primary">Sign in with Ethereum</button> }
+      : <button onClick={() => authenticate()} className="btn-secondary">Sign in with Ethereum</button> }
     </div>
   );
 }

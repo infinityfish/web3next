@@ -78,8 +78,19 @@ a {
 }
 
 .logo-spin {
-    -webkit-animation: spin 12s linear infinite;
-    animation: spin 1s ease-out infinite;
+    -webkit-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+}
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .right {
@@ -174,14 +185,14 @@ footer {
 }
 
 .btn-secondary {
-  background: white;
+  background:var(--dark-bg-color);
   color: var(--primary);
   border: 1px solid var(--primary);
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   margin-top: 5px;
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
   cursor: pointer;
 }
 
